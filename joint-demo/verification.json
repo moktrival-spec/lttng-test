@@ -1,0 +1,23 @@
+{
+  "verified_at": "2026-10-18",
+  "cases": 6,
+  "events": 2472,
+  "ust_events": 156,
+  "discarded_kernel": 0,
+  "discarded_user": 0,
+  "ctf_domains": 2,
+  "recomputed_analysis_identical": true,
+  "source_hashes_match": true,
+  "missing_wakeup_rejected": true,
+  "raw_ctf_retained": true,
+  "environment": "QEMU/KVM, Ubuntu 24.04.5, 6.8.0-147-generic PREEMPT_DYNAMIC, FIFO 50/70, 2 vCPU, 4 GiB",
+  "module_build": "LTTng-modules 2.13.23; sched/statedump and required core helpers; event definitions unchanged",
+  "rt_kernel_test": false,
+  "gui_test": true,
+  "gui_version": "Trace Compass 12.1.0 Windows x86_64",
+  "gui_verified_at": "2026-10-19",
+  "gui_case": "ready / trial 1 / cycle 3",
+  "gui_markers": "Native bookmarks, actual workbench capture",
+  "gui_blocked_ms": 20.126224,
+  "gui_ready_ms": 20.054217
+}

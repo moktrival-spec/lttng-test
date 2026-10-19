@@ -1,0 +1,68 @@
+Recording session joint-control-2600: [inactive]
+    Trace output: /home/lab/joint-demo/results-joint-control-2600/trace
+
+=== Domain: Linux kernel ===
+
+Tracked process attributes
+  Process IDs:          all
+  Virtual process IDs:  all
+  User IDs:             all
+  Virtual user IDs:     all
+  Group IDs:            all
+  Virtual group IDs:    all
+
+Channels:
+-------------
+- kernel: [enabled]
+
+    Attributes:
+      Event-loss mode:  discard
+      Sub-buffer size:  262144 bytes
+      Sub-buffer count: 4
+      Switch timer:     inactive
+      Read timer:       200000 us
+      Monitor timer:    1000000 us
+      Blocking timeout: 0 us
+      Trace file count: 1 per stream
+      Trace file size:  unlimited
+      Output mode:      splice
+
+    Statistics:
+      Discarded events: 0
+
+    Recording event rules:
+      sched_wakeup_new (loglevel: TRACE_EMERG (0)) (type: tracepoint) [enabled]
+      sched_wakeup (loglevel: TRACE_EMERG (0)) (type: tracepoint) [enabled]
+      sched_switch (loglevel: TRACE_EMERG (0)) (type: tracepoint) [enabled]
+
+=== Domain: User space ===
+
+Buffering scheme: per-user
+
+Tracked process attributes
+  Virtual process IDs:  all
+  Virtual user IDs:     all
+  Virtual group IDs:    all
+
+Channels:
+-------------
+- user: [enabled]
+
+    Attributes:
+      Event-loss mode:  discard
+      Sub-buffer size:  262144 bytes
+      Sub-buffer count: 4
+      Switch timer:     inactive
+      Read timer:       inactive
+      Monitor timer:    1000000 us
+      Blocking timeout: 0 us
+      Trace file count: 1 per stream
+      Trace file size:  unlimited
+      Output mode:      mmap
+
+    Statistics:
+      Discarded events: 0
+
+    Recording event rules:
+      control:* (type: tracepoint) [enabled]
+

@@ -1,0 +1,53 @@
+{
+  "mode": "lttng",
+  "stages": 128,
+  "cycles_per_thread": 2000,
+  "threads": 4,
+  "warmup_cycles": 8,
+  "expected_measured": 2048000,
+  "expected_warmup": 8192,
+  "async_msg_bytes": 408,
+  "queue_slots": 12849,
+  "discard_counter": 0,
+  "queue_at_producer_end": 0,
+  "deadline_misses": 1,
+  "self_cpu_s": 0.662274,
+  "producer_wall_s": 1.99915,
+  "drained_wall_s": 1.9992,
+  "affinity_ok": true,
+  "checksum": 18446634014058987264,
+  "call": {
+    "n": 2048000,
+    "mean_ns": 140.105,
+    "p50_ns": 94,
+    "p99_ns": 421,
+    "p999_ns": 3924,
+    "max_ns": 155868
+  },
+  "service": {
+    "n": 8000,
+    "mean_ns": 68130.8,
+    "p50_ns": 55038,
+    "p99_ns": 212420,
+    "p999_ns": 314846,
+    "max_ns": 410075
+  },
+  "response": {
+    "n": 8000,
+    "mean_ns": 130342,
+    "p50_ns": 118685,
+    "p99_ns": 330150,
+    "p999_ns": 467507,
+    "max_ns": 1027510
+  },
+  "warmup_discard_counter": 0,
+  "external_cpu_s": 0.07,
+  "pipeline_cpu_s": 0.7322740000000001,
+  "written_records": 2056192,
+  "output_bytes": 78423584,
+  "repeat": 2,
+  "order": 13,
+  "expected_records": 2056192,
+  "missing_records": 0,
+  "count_reconciled": true
+}

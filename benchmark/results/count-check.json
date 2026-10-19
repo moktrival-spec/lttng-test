@@ -1,0 +1,20 @@
+{
+  "source": "Saved per-run statistics; not a second audit of raw event files",
+  "runs": 70,
+  "recording_runs": 40,
+  "arithmetic_reconciliation_passed": true,
+  "checksums_equal": true,
+  "total_missing": 18606,
+  "loss_runs": [
+    {
+      "order": 57,
+      "repeat": 1,
+      "stages": 128,
+      "mode": "async-drop",
+      "missing_records": 18606,
+      "expected_records": 2056192
+    }
+  ],
+  "original_event_files_retained": false,
+  "record_count_method": "CSV sequence scan or Babeltrace counter performed during each run; captured in per-run JSON"
+}

@@ -1,0 +1,916 @@
+{
+  "event_count": 2472,
+  "ust_events": 156,
+  "sched_switch_events": 1457,
+  "sched_wakeup_events": 814,
+  "cases": [
+    {
+      "scenario": "blocked",
+      "trial": 1,
+      "control_tid": 2658,
+      "helper_tid": 2657,
+      "cpu": 1,
+      "cycle_elapsed_ms": 40.391913,
+      "wait_boundary_ms": 40.367203,
+      "blocked_ms": 40.258699,
+      "runnable_ms": 0.090743,
+      "off_cpu_ms": 40.349442,
+      "helper_scheduled_while_runnable_ms": 0.090743,
+      "switch_out_ns": 1792303009606158452,
+      "wakeup_ns": 1792303009646417151,
+      "switch_in_ns": 1792303009646507894,
+      "prev_state": 1,
+      "control_kernel_prio": -51,
+      "helper_kernel_prio": -71,
+      "cpu_owners_after_wakeup": [
+        {
+          "tid": 2657,
+          "start_ns": 1792303009646417151,
+          "end_ns": 1792303009646507894
+        }
+      ],
+      "evidence": [
+        {
+          "relative_ms": -0.033772,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "blocked",
+            "trial": 1,
+            "cycle": 3,
+            "phase": "cycle_begin",
+            "actor_tid": 2658,
+            "release_ns": 154263560905,
+            "stamp_ns": 154263594014
+          }
+        },
+        {
+          "relative_ms": -0.010367,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "blocked",
+            "trial": 1,
+            "cycle": 3,
+            "phase": "wait_begin",
+            "actor_tid": 2658,
+            "release_ns": 154263560905,
+            "stamp_ns": 154263618263
+          }
+        },
+        {
+          "relative_ms": 0.0,
+          "name": "sched_switch",
+          "cpu": 1,
+          "payload": {
+            "prev_comm": "ctrl-loop",
+            "prev_tid": 2658,
+            "prev_prio": -51,
+            "prev_state": 1,
+            "next_comm": "swapper/1",
+            "next_tid": 0,
+            "next_prio": 20
+          }
+        },
+        {
+          "relative_ms": 40.248289,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "blocked",
+            "trial": 1,
+            "cycle": 3,
+            "phase": "wake_emit",
+            "actor_tid": 2657,
+            "release_ns": 0,
+            "stamp_ns": 154303869946
+          }
+        },
+        {
+          "relative_ms": 40.258699,
+          "name": "sched_wakeup",
+          "cpu": 1,
+          "payload": {
+            "comm": "ctrl-loop",
+            "tid": 2658,
+            "prio": -51,
+            "target_cpu": 1
+          }
+        },
+        {
+          "relative_ms": 40.349442,
+          "name": "sched_switch",
+          "cpu": 1,
+          "payload": {
+            "prev_comm": "supply-70",
+            "prev_tid": 2657,
+            "prev_prio": -71,
+            "prev_state": 16,
+            "next_comm": "ctrl-loop",
+            "next_tid": 2658,
+            "next_prio": -51
+          }
+        },
+        {
+          "relative_ms": 40.356836,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "blocked",
+            "trial": 1,
+            "cycle": 3,
+            "phase": "wait_end",
+            "actor_tid": 2658,
+            "release_ns": 154263560905,
+            "stamp_ns": 154303984391
+          }
+        },
+        {
+          "relative_ms": 40.358141,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "blocked",
+            "trial": 1,
+            "cycle": 3,
+            "phase": "cycle_end",
+            "actor_tid": 2658,
+            "release_ns": 154263560905,
+            "stamp_ns": 154303986551
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "blocked",
+      "trial": 2,
+      "control_tid": 2672,
+      "helper_tid": 2671,
+      "cpu": 1,
+      "cycle_elapsed_ms": 41.338283,
+      "wait_boundary_ms": 41.312703,
+      "blocked_ms": 41.058315,
+      "runnable_ms": 0.236481,
+      "off_cpu_ms": 41.294796,
+      "helper_scheduled_while_runnable_ms": 0.236481,
+      "switch_out_ns": 1792303009746430173,
+      "wakeup_ns": 1792303009787488488,
+      "switch_in_ns": 1792303009787724969,
+      "prev_state": 1,
+      "control_kernel_prio": -51,
+      "helper_kernel_prio": -71,
+      "cpu_owners_after_wakeup": [
+        {
+          "tid": 2671,
+          "start_ns": 1792303009787488488,
+          "end_ns": 1792303009787724969
+        }
+      ],
+      "evidence": [
+        {
+          "relative_ms": -0.031654,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "blocked",
+            "trial": 2,
+            "cycle": 3,
+            "phase": "cycle_begin",
+            "actor_tid": 2672,
+            "release_ns": 154403782764,
+            "stamp_ns": 154403867910
+          }
+        },
+        {
+          "relative_ms": -0.008297,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "blocked",
+            "trial": 2,
+            "cycle": 3,
+            "phase": "wait_begin",
+            "actor_tid": 2672,
+            "release_ns": 154403782764,
+            "stamp_ns": 154403892029
+          }
+        },
+        {
+          "relative_ms": 0.0,
+          "name": "sched_switch",
+          "cpu": 1,
+          "payload": {
+            "prev_comm": "ctrl-loop",
+            "prev_tid": 2672,
+            "prev_prio": -51,
+            "prev_state": 1,
+            "next_comm": "swapper/1",
+            "next_tid": 0,
+            "next_prio": 20
+          }
+        },
+        {
+          "relative_ms": 41.047399,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "blocked",
+            "trial": 2,
+            "cycle": 3,
+            "phase": "wake_emit",
+            "actor_tid": 2671,
+            "release_ns": 0,
+            "stamp_ns": 154444914699
+          }
+        },
+        {
+          "relative_ms": 41.058315,
+          "name": "sched_wakeup",
+          "cpu": 1,
+          "payload": {
+            "comm": "ctrl-loop",
+            "tid": 2672,
+            "prio": -51,
+            "target_cpu": 1
+          }
+        },
+        {
+          "relative_ms": 41.294796,
+          "name": "sched_switch",
+          "cpu": 1,
+          "payload": {
+            "prev_comm": "supply-70",
+            "prev_tid": 2671,
+            "prev_prio": -71,
+            "prev_state": 16,
+            "next_comm": "ctrl-loop",
+            "next_tid": 2672,
+            "next_prio": -51
+          }
+        },
+        {
+          "relative_ms": 41.304406,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "blocked",
+            "trial": 2,
+            "cycle": 3,
+            "phase": "wait_end",
+            "actor_tid": 2672,
+            "release_ns": 154403782764,
+            "stamp_ns": 154445202492
+          }
+        },
+        {
+          "relative_ms": 41.306629,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "blocked",
+            "trial": 2,
+            "cycle": 3,
+            "phase": "cycle_end",
+            "actor_tid": 2672,
+            "release_ns": 154403782764,
+            "stamp_ns": 154445206745
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "blocked",
+      "trial": 3,
+      "control_tid": 2686,
+      "helper_tid": 2685,
+      "cpu": 1,
+      "cycle_elapsed_ms": 41.217932,
+      "wait_boundary_ms": 41.195682,
+      "blocked_ms": 41.097934,
+      "runnable_ms": 0.082192,
+      "off_cpu_ms": 41.180126,
+      "helper_scheduled_while_runnable_ms": 0.082192,
+      "switch_out_ns": 1792303009890654259,
+      "wakeup_ns": 1792303009931752193,
+      "switch_in_ns": 1792303009931834385,
+      "prev_state": 1,
+      "control_kernel_prio": -51,
+      "helper_kernel_prio": -71,
+      "cpu_owners_after_wakeup": [
+        {
+          "tid": 2685,
+          "start_ns": 1792303009931752193,
+          "end_ns": 1792303009931834385
+        }
+      ],
+      "evidence": [
+        {
+          "relative_ms": -0.030095,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "blocked",
+            "trial": 3,
+            "cycle": 3,
+            "phase": "cycle_begin",
+            "actor_tid": 2686,
+            "release_ns": 154547941693,
+            "stamp_ns": 154548093093
+          }
+        },
+        {
+          "relative_ms": -0.009094,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "blocked",
+            "trial": 3,
+            "cycle": 3,
+            "phase": "wait_begin",
+            "actor_tid": 2686,
+            "release_ns": 154547941693,
+            "stamp_ns": 154548115413
+          }
+        },
+        {
+          "relative_ms": 0.0,
+          "name": "sched_switch",
+          "cpu": 1,
+          "payload": {
+            "prev_comm": "ctrl-loop",
+            "prev_tid": 2686,
+            "prev_prio": -51,
+            "prev_state": 1,
+            "next_comm": "swapper/1",
+            "next_tid": 0,
+            "next_prio": 20
+          }
+        },
+        {
+          "relative_ms": 41.087241,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "blocked",
+            "trial": 3,
+            "cycle": 3,
+            "phase": "wake_emit",
+            "actor_tid": 2685,
+            "release_ns": 0,
+            "stamp_ns": 154589202724
+          }
+        },
+        {
+          "relative_ms": 41.097934,
+          "name": "sched_wakeup",
+          "cpu": 1,
+          "payload": {
+            "comm": "ctrl-loop",
+            "tid": 2686,
+            "prio": -51,
+            "target_cpu": 1
+          }
+        },
+        {
+          "relative_ms": 41.180126,
+          "name": "sched_switch",
+          "cpu": 1,
+          "payload": {
+            "prev_comm": "supply-70",
+            "prev_tid": 2685,
+            "prev_prio": -71,
+            "prev_state": 16,
+            "next_comm": "ctrl-loop",
+            "next_tid": 2686,
+            "next_prio": -51
+          }
+        },
+        {
+          "relative_ms": 41.186588,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "blocked",
+            "trial": 3,
+            "cycle": 3,
+            "phase": "wait_end",
+            "actor_tid": 2686,
+            "release_ns": 154547941693,
+            "stamp_ns": 154589310434
+          }
+        },
+        {
+          "relative_ms": 41.187837,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "blocked",
+            "trial": 3,
+            "cycle": 3,
+            "phase": "cycle_end",
+            "actor_tid": 2686,
+            "release_ns": 154547941693,
+            "stamp_ns": 154589312128
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "ready",
+      "trial": 1,
+      "control_tid": 2665,
+      "helper_tid": 2664,
+      "cpu": 1,
+      "cycle_elapsed_ms": 40.241043,
+      "wait_boundary_ms": 40.2012,
+      "blocked_ms": 20.126224,
+      "runnable_ms": 20.054217,
+      "off_cpu_ms": 40.180441,
+      "helper_scheduled_while_runnable_ms": 20.054217,
+      "switch_out_ns": 1792303009679257669,
+      "wakeup_ns": 1792303009699383893,
+      "switch_in_ns": 1792303009719438110,
+      "prev_state": 1,
+      "control_kernel_prio": -51,
+      "helper_kernel_prio": -71,
+      "cpu_owners_after_wakeup": [
+        {
+          "tid": 2664,
+          "start_ns": 1792303009699383893,
+          "end_ns": 1792303009719438110
+        }
+      ],
+      "evidence": [
+        {
+          "relative_ms": -0.055625,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 1,
+            "cycle": 3,
+            "phase": "cycle_begin",
+            "actor_tid": 2665,
+            "release_ns": 154336612477,
+            "stamp_ns": 154336670689
+          }
+        },
+        {
+          "relative_ms": -0.016323,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 1,
+            "cycle": 3,
+            "phase": "wait_begin",
+            "actor_tid": 2665,
+            "release_ns": 154336612477,
+            "stamp_ns": 154336711447
+          }
+        },
+        {
+          "relative_ms": 0.0,
+          "name": "sched_switch",
+          "cpu": 1,
+          "payload": {
+            "prev_comm": "ctrl-loop",
+            "prev_tid": 2665,
+            "prev_prio": -51,
+            "prev_state": 1,
+            "next_comm": "swapper/1",
+            "next_tid": 0,
+            "next_prio": 20
+          }
+        },
+        {
+          "relative_ms": 20.120202,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 1,
+            "cycle": 3,
+            "phase": "wake_emit",
+            "actor_tid": 2664,
+            "release_ns": 0,
+            "stamp_ns": 154356843912
+          }
+        },
+        {
+          "relative_ms": 20.126224,
+          "name": "sched_wakeup",
+          "cpu": 1,
+          "payload": {
+            "comm": "ctrl-loop",
+            "tid": 2665,
+            "prio": -51,
+            "target_cpu": 1
+          }
+        },
+        {
+          "relative_ms": 20.12775,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 1,
+            "cycle": 3,
+            "phase": "hog_begin",
+            "actor_tid": 2664,
+            "release_ns": 0,
+            "stamp_ns": 154356855565
+          }
+        },
+        {
+          "relative_ms": 40.130344,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 1,
+            "cycle": 3,
+            "phase": "hog_end",
+            "actor_tid": 2664,
+            "release_ns": 0,
+            "stamp_ns": 154376856444
+          }
+        },
+        {
+          "relative_ms": 40.180441,
+          "name": "sched_switch",
+          "cpu": 1,
+          "payload": {
+            "prev_comm": "supply-70",
+            "prev_tid": 2664,
+            "prev_prio": -71,
+            "prev_state": 16,
+            "next_comm": "ctrl-loop",
+            "next_tid": 2665,
+            "next_prio": -51
+          }
+        },
+        {
+          "relative_ms": 40.184877,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 1,
+            "cycle": 3,
+            "phase": "wait_end",
+            "actor_tid": 2665,
+            "release_ns": 154336612477,
+            "stamp_ns": 154376912285
+          }
+        },
+        {
+          "relative_ms": 40.185418,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 1,
+            "cycle": 3,
+            "phase": "cycle_end",
+            "actor_tid": 2665,
+            "release_ns": 154336612477,
+            "stamp_ns": 154376913414
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "ready",
+      "trial": 2,
+      "control_tid": 2679,
+      "helper_tid": 2678,
+      "cpu": 1,
+      "cycle_elapsed_ms": 40.684746,
+      "wait_boundary_ms": 40.646834,
+      "blocked_ms": 20.584401,
+      "runnable_ms": 20.041978,
+      "off_cpu_ms": 40.626379,
+      "helper_scheduled_while_runnable_ms": 20.041978,
+      "switch_out_ns": 1792303009821689561,
+      "wakeup_ns": 1792303009842273962,
+      "switch_in_ns": 1792303009862315940,
+      "prev_state": 1,
+      "control_kernel_prio": -51,
+      "helper_kernel_prio": -71,
+      "cpu_owners_after_wakeup": [
+        {
+          "tid": 2678,
+          "start_ns": 1792303009842273962,
+          "end_ns": 1792303009862315940
+        }
+      ],
+      "evidence": [
+        {
+          "relative_ms": -0.054391,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 2,
+            "cycle": 3,
+            "phase": "cycle_begin",
+            "actor_tid": 2679,
+            "release_ns": 154479067611,
+            "stamp_ns": 154479103914
+          }
+        },
+        {
+          "relative_ms": -0.016886,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 2,
+            "cycle": 3,
+            "phase": "wait_begin",
+            "actor_tid": 2679,
+            "release_ns": 154479067611,
+            "stamp_ns": 154479142632
+          }
+        },
+        {
+          "relative_ms": 0.0,
+          "name": "sched_switch",
+          "cpu": 1,
+          "payload": {
+            "prev_comm": "ctrl-loop",
+            "prev_tid": 2679,
+            "prev_prio": -51,
+            "prev_state": 1,
+            "next_comm": "swapper/1",
+            "next_tid": 0,
+            "next_prio": 20
+          }
+        },
+        {
+          "relative_ms": 20.574091,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 2,
+            "cycle": 3,
+            "phase": "wake_emit",
+            "actor_tid": 2678,
+            "release_ns": 0,
+            "stamp_ns": 154499726170
+          }
+        },
+        {
+          "relative_ms": 20.584401,
+          "name": "sched_wakeup",
+          "cpu": 1,
+          "payload": {
+            "comm": "ctrl-loop",
+            "tid": 2679,
+            "prio": -51,
+            "target_cpu": 1
+          }
+        },
+        {
+          "relative_ms": 20.586823,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 2,
+            "cycle": 3,
+            "phase": "hog_begin",
+            "actor_tid": 2678,
+            "release_ns": 0,
+            "stamp_ns": 154499746238
+          }
+        },
+        {
+          "relative_ms": 40.589824,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 2,
+            "cycle": 3,
+            "phase": "hog_end",
+            "actor_tid": 2678,
+            "release_ns": 0,
+            "stamp_ns": 154519747641
+          }
+        },
+        {
+          "relative_ms": 40.626379,
+          "name": "sched_switch",
+          "cpu": 1,
+          "payload": {
+            "prev_comm": "supply-70",
+            "prev_tid": 2678,
+            "prev_prio": -71,
+            "prev_state": 16,
+            "next_comm": "ctrl-loop",
+            "next_tid": 2679,
+            "next_prio": -51
+          }
+        },
+        {
+          "relative_ms": 40.629948,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 2,
+            "cycle": 3,
+            "phase": "wait_end",
+            "actor_tid": 2679,
+            "release_ns": 154479067611,
+            "stamp_ns": 154519789563
+          }
+        },
+        {
+          "relative_ms": 40.630355,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 2,
+            "cycle": 3,
+            "phase": "cycle_end",
+            "actor_tid": 2679,
+            "release_ns": 154479067611,
+            "stamp_ns": 154519790251
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "ready",
+      "trial": 3,
+      "control_tid": 2693,
+      "helper_tid": 2692,
+      "cpu": 1,
+      "cycle_elapsed_ms": 40.832013,
+      "wait_boundary_ms": 40.80953,
+      "blocked_ms": 20.74699,
+      "runnable_ms": 20.046426,
+      "off_cpu_ms": 40.793416,
+      "helper_scheduled_while_runnable_ms": 20.046426,
+      "switch_out_ns": 1792303009963609162,
+      "wakeup_ns": 1792303009984356152,
+      "switch_in_ns": 1792303010004402578,
+      "prev_state": 1,
+      "control_kernel_prio": -51,
+      "helper_kernel_prio": -71,
+      "cpu_owners_after_wakeup": [
+        {
+          "tid": 2692,
+          "start_ns": 1792303009984356152,
+          "end_ns": 1792303010004402578
+        }
+      ],
+      "evidence": [
+        {
+          "relative_ms": -0.035689,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 3,
+            "cycle": 3,
+            "phase": "cycle_begin",
+            "actor_tid": 2693,
+            "release_ns": 154620995120,
+            "stamp_ns": 154621042801
+          }
+        },
+        {
+          "relative_ms": -0.01366,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 3,
+            "cycle": 3,
+            "phase": "wait_begin",
+            "actor_tid": 2693,
+            "release_ns": 154620995120,
+            "stamp_ns": 154621065685
+          }
+        },
+        {
+          "relative_ms": 0.0,
+          "name": "sched_switch",
+          "cpu": 1,
+          "payload": {
+            "prev_comm": "ctrl-loop",
+            "prev_tid": 2693,
+            "prev_prio": -51,
+            "prev_state": 1,
+            "next_comm": "swapper/1",
+            "next_tid": 0,
+            "next_prio": 20
+          }
+        },
+        {
+          "relative_ms": 20.739245,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 3,
+            "cycle": 3,
+            "phase": "wake_emit",
+            "actor_tid": 2692,
+            "release_ns": 0,
+            "stamp_ns": 154641813120
+          }
+        },
+        {
+          "relative_ms": 20.74699,
+          "name": "sched_wakeup",
+          "cpu": 1,
+          "payload": {
+            "comm": "ctrl-loop",
+            "tid": 2693,
+            "prio": -51,
+            "target_cpu": 1
+          }
+        },
+        {
+          "relative_ms": 20.749438,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 3,
+            "cycle": 3,
+            "phase": "hog_begin",
+            "actor_tid": 2692,
+            "release_ns": 0,
+            "stamp_ns": 154641828444
+          }
+        },
+        {
+          "relative_ms": 40.751623,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 3,
+            "cycle": 3,
+            "phase": "hog_end",
+            "actor_tid": 2692,
+            "release_ns": 0,
+            "stamp_ns": 154661829866
+          }
+        },
+        {
+          "relative_ms": 40.793416,
+          "name": "sched_switch",
+          "cpu": 1,
+          "payload": {
+            "prev_comm": "supply-70",
+            "prev_tid": 2692,
+            "prev_prio": -71,
+            "prev_state": 16,
+            "next_comm": "ctrl-loop",
+            "next_tid": 2693,
+            "next_prio": -51
+          }
+        },
+        {
+          "relative_ms": 40.79587,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 3,
+            "cycle": 3,
+            "phase": "wait_end",
+            "actor_tid": 2693,
+            "release_ns": 154620995120,
+            "stamp_ns": 154661875181
+          }
+        },
+        {
+          "relative_ms": 40.796324,
+          "name": "control:phase",
+          "cpu": 1,
+          "payload": {
+            "scenario": "ready",
+            "trial": 3,
+            "cycle": 3,
+            "phase": "cycle_end",
+            "actor_tid": 2693,
+            "release_ns": 154620995120,
+            "stamp_ns": 154661875822
+          }
+        }
+      ]
+    }
+  ],
+  "interpretation": "Blocked interval = interruptible switch-out to target wakeup; runnable interval = wakeup to switch-in. CPU ownership is scheduler-level; IRQ time not separated.",
+  "clock": "Babeltrace CTF ns_from_origin for both domains; payload stamp_ns not used for cross-domain subtraction."
+}

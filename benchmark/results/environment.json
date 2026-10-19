@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-17",
+  "kernel": "Linux 6.18.33.1-microsoft-standard-WSL2",
+  "kernel_build": "#1 SMP PREEMPT_DYNAMIC Fri Jun  5 01:12:21 UTC 2026",
+  "preempt_rt": false,
+  "distribution": "Ubuntu 24.04.4 / WSL2",
+  "cpu_model": "Intel Core i9-12900H (virtualized)",
+  "online_cpus": 20,
+  "affinity": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "producer_cpus": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "scheduler": "SCHED_OTHER; no RT priorities or mlockall",
+  "output_filesystem": "ext2/ext3",
+  "lttng_tools": "lttng (LTTng Trace Control) 2.13.11 - Nordicit\u00e9",
+  "babeltrace": "Babeltrace 2.0.5 \"Amqui\"\n\nAmqui (/\u0252mkwi\u02d0/) is a town in eastern Qu\u00e9bec, Canada, at the base of the\nGasp\u00e9 peninsula in Bas-Saint-Laurent. Located at the confluence of the Humqui\nand Matap\u00e9dia Rivers, its proximity to woodlands makes it a great destination\nfor outdoor activities such as camping, hiking, and mountain biking.",
+  "ust": "2.13.7",
+  "spdlog": "1.15.3",
+  "compiler": "13.3.0",
+  "period_ns": 1000000,
+  "work_iterations_per_cycle": 16384,
+  "warmup_cycles": 8,
+  "cycles_per_thread": 2000,
+  "repeats": 5,
+  "seed": 20261017,
+  "channel": {
+    "subbuf_bytes": 65536,
+    "num_subbuf": 4,
+    "allocation": "per-user per-CPU",
+    "mode": "discard"
+  },
+  "queue_budget_bytes": 5242880,
+  "measurement": "nearest-rank quantiles; no per-record fsync; final drain before counting; absolute scheduled release retained after overruns"
+}

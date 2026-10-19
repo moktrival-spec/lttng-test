@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.png -text
+joint-demo/results/trace/** -text
+joint-demo/results/** -text
+benchmark/results/** -text
+ust-demo/example-* -text
+*.jpg -text

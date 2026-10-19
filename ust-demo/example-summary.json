@@ -1,0 +1,106 @@
+{
+  "events": 30,
+  "complete_cycles": 10,
+  "period_ms": 1,
+  "missing_phases": 0,
+  "duplicate_phases": 0,
+  "deadline_misses": 3,
+  "cycles": [
+    {
+      "cycle": 1,
+      "late_ms": 0.129524,
+      "compute_ms": 0.57559,
+      "output_ms": 0.171827,
+      "exec_ms": 0.747417,
+      "response_ms": 0.876941,
+      "deadline_missed": false
+    },
+    {
+      "cycle": 2,
+      "late_ms": 0.061211,
+      "compute_ms": 0.016529,
+      "output_ms": 0.159337,
+      "exec_ms": 0.175866,
+      "response_ms": 0.237077,
+      "deadline_missed": false
+    },
+    {
+      "cycle": 3,
+      "late_ms": 0.07665,
+      "compute_ms": 0.019392,
+      "output_ms": 3.109918,
+      "exec_ms": 3.12931,
+      "response_ms": 3.20596,
+      "deadline_missed": true
+    },
+    {
+      "cycle": 4,
+      "late_ms": 2.213927,
+      "compute_ms": 0.017609,
+      "output_ms": 0.161588,
+      "exec_ms": 0.179197,
+      "response_ms": 2.393124,
+      "deadline_missed": true
+    },
+    {
+      "cycle": 5,
+      "late_ms": 1.397356,
+      "compute_ms": 0.017605,
+      "output_ms": 0.174061,
+      "exec_ms": 0.191666,
+      "response_ms": 1.589022,
+      "deadline_missed": true
+    },
+    {
+      "cycle": 6,
+      "late_ms": 0.598288,
+      "compute_ms": 0.016466,
+      "output_ms": 0.164489,
+      "exec_ms": 0.180955,
+      "response_ms": 0.779243,
+      "deadline_missed": false
+    },
+    {
+      "cycle": 7,
+      "late_ms": 0.077408,
+      "compute_ms": 0.019106,
+      "output_ms": 0.173194,
+      "exec_ms": 0.1923,
+      "response_ms": 0.269708,
+      "deadline_missed": false
+    },
+    {
+      "cycle": 8,
+      "late_ms": 0.099326,
+      "compute_ms": 0.01687,
+      "output_ms": 0.159532,
+      "exec_ms": 0.176402,
+      "response_ms": 0.275728,
+      "deadline_missed": false
+    },
+    {
+      "cycle": 9,
+      "late_ms": 0.100914,
+      "compute_ms": 0.017026,
+      "output_ms": 0.174575,
+      "exec_ms": 0.191601,
+      "response_ms": 0.292515,
+      "deadline_missed": false
+    },
+    {
+      "cycle": 10,
+      "late_ms": 0.095376,
+      "compute_ms": 0.017443,
+      "output_ms": 0.15878,
+      "exec_ms": 0.176223,
+      "response_ms": 0.271599,
+      "deadline_missed": false
+    }
+  ],
+  "verified_at": "2026-10-18",
+  "discarded_events": 0,
+  "environment": "WSL2 / Ubuntu 24.04 / PREEMPT_DYNAMIC / SCHED_OTHER",
+  "kernel_tracing_executed": false,
+  "rt_validation": false,
+  "notice": "Single demonstration run, not a performance distribution."
+}

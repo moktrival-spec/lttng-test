@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+/joint-demo/joint
+/joint-demo/results-joint-control-*/
+/joint-demo/module-build/
+/joint-demo/replay*.json*
+/ust-demo/control-demo
+/ust-demo/trace/
+/benchmark/bench
+/benchmark/.deps/
+/benchmark/runs/
+/tracecompass-workspace/
+*.qcow2
+*.iso
+*.pem

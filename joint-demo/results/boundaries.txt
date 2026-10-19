@@ -1,0 +1,6 @@
+scenario=blocked trial=1 cycle=3 begin_ns=154263594014 end_ns=154303986551 elapsed_ms=40.392537
+scenario=ready trial=1 cycle=3 begin_ns=154336670689 end_ns=154376913414 elapsed_ms=40.242725
+scenario=blocked trial=2 cycle=3 begin_ns=154403867910 end_ns=154445206745 elapsed_ms=41.338835
+scenario=ready trial=2 cycle=3 begin_ns=154479103914 end_ns=154519790251 elapsed_ms=40.686337
+scenario=blocked trial=3 cycle=3 begin_ns=154548093093 end_ns=154589312128 elapsed_ms=41.219035
+scenario=ready trial=3 cycle=3 begin_ns=154621042801 end_ns=154661875822 elapsed_ms=40.833021
